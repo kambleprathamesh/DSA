@@ -1,0 +1,23 @@
+public static int f1(int n){
+       int fact;
+       if(n==0){
+                fact=1;
+        }else{
+               fact=1;
+              int i=1;
+              for(i=1;i<=n;i++){
+                fact=fact*i;
+              }
+        }
+       return fact;
+     }
+     public static int binCoffe(int a,int b){
+        int fact_a=f1(a);
+        int fact_b=f1(b);
+        int ab=f1(a-b);
+        int BC=fact_a/(fact_b*ab);
+        return BC;
+     }  
+     public static int sum(int a,int b){
+       return a+b;
+     }
