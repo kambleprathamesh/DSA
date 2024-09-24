@@ -68,6 +68,6 @@ public class LL {
         ll.addLast(4);
         ll.addLast(5);
         ll.addLast(18);
-        ll.printLL();
+        // ll.printLL();
     }
 }
