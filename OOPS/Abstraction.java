@@ -3,7 +3,7 @@ public class Abstraction {
         Horse h = new Horse();
         h.eat();
         System.out.println(h.setColor("pink"));
-
+        h.walk();
     }
 }
 
@@ -14,6 +14,11 @@ abstract class Animal {
 
     Animal() {
         System.out.println("Animal Constructor called...");
+    }
+
+    void walk() {
+        System.out.println("Animal  walk function called...");
+
     }
 }
 
