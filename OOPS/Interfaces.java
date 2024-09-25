@@ -3,10 +3,12 @@ public class Interfaces {
 
         // King k = new King();
         // k.moves();
+        // Bear b = new Bear();
+        // b.walk();
+        // b.eats();
 
-        Bear b = new Bear();
-        b.walk();
-        b.eats();
+        B b = new B();
+        System.out.println(b.A);
     }
 }
 
@@ -23,6 +25,7 @@ class King implements chessPlayer {
     }
 }
 
+// multiple interface
 interface herbivore {
     void walk();
 }
@@ -40,4 +43,22 @@ class Bear implements herbivore, carnivore {
         System.out.println("Beaer is eating");
 
     }
+}
+
+class A {
+    String A;
+
+    A() {
+        System.out.println("Printing A");
+    }
+}
+
+class B extends A {
+
+    B() {
+        super.A = "prathmesh";
+        System.out.println("Printing B");
+
+    }
+
 }

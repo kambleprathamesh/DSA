@@ -10,7 +10,7 @@ public class Abstraction {
 abstract class Animal {
     String color = "Brown";
 
-    abstract void eat();
+    public abstract void eat();
 
     Animal() {
         System.out.println("Animal Constructor called...");
@@ -32,7 +32,7 @@ class Horse extends Animal {
         return this.color = color;
     }
 
-    void eat() {
+    public void eat() {
         System.out.println("Horse  eat function called...");
 
     }
