@@ -59,6 +59,8 @@ public class TwoDArray {
             System.out.println(Arrays.toString(arr));
             // System.out.print(ele + " ");
         }
+
+
     }
 
 }
