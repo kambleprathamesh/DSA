@@ -1,4 +1,3 @@
-// package Loops;
 
 public class Neon {
     public static void main(String[] args) {
