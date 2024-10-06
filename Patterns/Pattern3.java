@@ -1,6 +1,6 @@
 public class Pattern3 {
     public static void main(String[] args) {
-        pattern2(5);
+        Pattern2(5);
     }
 
     // pattern1
@@ -31,20 +31,15 @@ public class Pattern3 {
     // **
     // *
 
-    static void pattern2(int n) {
-        for (int row = 1; row < 2 * n; row++) {
-            if (row > n) {
-                for (int col = 1; col <= n - (row - n); col++) {
-                    System.out.print("*");
-                }
-                System.out.println();
-            } else {
-                for (int col = 0; col <=row; col++) {
-                    System.out.print("*");
-                }
-                System.out.println();
+    static void Pattern2(int n) {
+        for (int row = 0; row <= 2 * n; row++) {
+            int totalCols = row > n ? 2 * n - row : row;
+
+            for (int col = 0; col <= totalCols; col++) {
+                System.out.print("*");
             }
+            System.out.println();
+
         }
     }
-
 }
