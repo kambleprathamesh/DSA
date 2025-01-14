@@ -8,8 +8,23 @@ public class Bitwise {
         return (n & 1) == 1;
     }
 
+    static int isUnique(int arr[]) {
+        int unique = 0;
+        for (int n : arr) {
+            unique ^= n;
+        }
+        return unique;
+
+    }
+
+    static int ithDigit(int n, int i) {
+
+        return n & 1 << (i - 1);
+    }
+
     public static void main(String[] args) {
-        boolean ans = isOdd(2);
+        int arr[] = { 2, 3, 67677, 67677, 6, 2, 3 };
+        int ans = ithDigit(31, 5);
         System.out.println(ans);
     }
 }
