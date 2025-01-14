@@ -84,22 +84,22 @@ public class Strings {
     // }
 
     // string to uppercase
-    public static String toUpperCase(String str) {
-        // hii, my name is prathmesh
-        StringBuilder sb = new StringBuilder("");
-        char ch = Character.toUpperCase(str.charAt(0));
-        sb.append(ch);
-        for (int i = 1; i < str.length(); i++) {
-            if (str.charAt(i) == ' ') {
-                sb.append(str.charAt(i));
-                ch = Character.toUpperCase(str.charAt(i + 1));
-                sb.append(ch);
-            } else {
-                sb.append(str.charAt(i));
-            }
-        }
-        return sb.toString();
-    }
+    // public static String toUpperCase(String str) {
+    // // hii, my name is prathmesh
+    // StringBuilder sb = new StringBuilder("");
+    // char ch = Character.toUpperCase(str.charAt(0));
+    // sb.append(ch);
+    // for (int i = 1; i < str.length(); i++) {
+    // if (str.charAt(i) == ' ') {
+    // sb.append(str.charAt(i));
+    // ch = Character.toUpperCase(str.charAt(i + 1));
+    // sb.append(ch);
+    // } else {
+    // sb.append(str.charAt(i));
+    // }
+    // }
+    // return sb.toString();
+    // }
 
     public static void main(String args[]) {
         // System.out.println("Enter String Below");
@@ -140,7 +140,7 @@ public class Strings {
 
         // string to uppercase
 
-        String str = "hii, my name is prathmesh";
-        System.out.println(toUpperCase(str));
+        // String str = "hii, my name is prathmesh";
+        // System.out.println(toUpperCase(str));
     }
 }
